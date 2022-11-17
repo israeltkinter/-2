@@ -126,7 +126,7 @@ class Window(tk.Tk):
         label1.place(x=150,y=50)
         label2 = tk.Label(new, text="...המתן בזמן שהמערכת מבצעת התחברות לרשת", bg="white")
         label2.place(x=27, y=80)
-        os.system("rasdial conn2")
+        os.system("rasdial conn")
         label2 = tk.Label(new, text="!!!אתה מחובר", bg="white")
         label2.place(x=205, y=110)
 
@@ -139,32 +139,6 @@ class Window(tk.Tk):
     def callup(self):
         os.system("rasdial/d")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 root = Window()
-
-
 
 root.mainloop()
